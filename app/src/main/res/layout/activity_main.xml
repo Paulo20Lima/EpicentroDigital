@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Epicentro Digital 🌍🔍"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="12dp" />
+
+        <EditText
+            android:id="@+id/edtLocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do local (cidade/bairro)" />
+
+        <EditText
+            android:id="@+id/edtTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tipo do evento (chuva, seca, etc.)"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtImpacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grau de impacto (leve, moderado, severo)"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Data do evento"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtPessoas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de pessoas afetadas"
+            android:inputType="number"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnAdicionar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Incluir"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnIdentificacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Identificação Alunos"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewEventos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
